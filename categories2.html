@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .layOut {
+            display: grid;
+            grid-template-columns: 256px 1fr;
+        } 
+        .layOut .left-layOut .section1 ul{
+            list-style: none;
+            padding: 19px 0px 15px 0px;
+        }
+
+        .layOut .left-layOut .section1 li {
+            font-size: 12px;
+            padding: 0px 0px 8px 0px;
+        }
+
+        .layOut .left-layOut .section1 li a:hover {
+            color: #DC39FC;
+        }
+
+        .layOut .left-layOut .section1 li a:focus {
+            color: #670652;
+        }
+        
+        .layOut .left-layOut {
+            border: 1px solid #f3f3f3;
+            box-shadow: 0px 0px 16px #a29f9f;
+            padding: 8px 7px 5px 7px;
+            margin: 14px -6px 6px 0px
+        }
+
+        .section2 .Ranger {
+            padding: 12px;
+        }
+
+        .section3 form {
+            padding: 16px;
+        }
+
+        .section4 .main-box {
+            display: grid;
+            grid-template-columns: repeat(5,1fr) ;
+            gap: 6px 6px;
+        }
+
+        .section4 .main-box {
+            padding: 9px 0px 11px 0px;
+        }
+        
+        .section4 .main-box .box {
+            height: 40px;
+            width: 40px;
+            border: 2px solid #cfcfcf;
+            border-radius: 9px;
+        }
+
+        .right-layOut {
+            padding: 16px 0px 0px 49px;
+        }
+        .right-layOut .item img {
+            width: 40px
+        }
+
+        .right-layOut .navy1 {
+            padding-bottom: 5px;;
+        }
+
+        .right-layOut .navy1 ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .right-layOut .navy2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navy2 {
+            display:  inline-flex;
+        }
+        .navy2 div {
+            display: inline-table;
+        }
+
+        .navy2-left h1 {
+            font-size: 10px;
+            font-weight: 100;
+            color: #abaeb2;
+        }
+        .items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+        .items .item {
+            border: 1px solid #ebe7e7;
+            margin: 10px;
+            transition-duration: 0.6s;
+        }
+
+        .items .item:hover {
+            box-shadow: 0px 1px 10px rgba(212, 57, 251, 0.632);
+        }
+
+        .items .item .item-content {
+                padding: 10px;
+
+        }
+
+        .navy2-left select {
+            border: 1px solid #aaa2a2;
+        }
+        .item  .item-pic img {
+            width: 180px;
+           height: 169px;
+           margin-left: 12px;
+
+        }
+
+        .item .item-content .line1 span {
+            color: #0275d8;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .item .item-content .line2 {
+            font-size: 10px;
+        }
+
+        .item .item-content  h3 {
+            font-size: 12px;
+            font-weight: 100;
+            color: #928b8b;
+            width: 185px;
+        }
+
+        .item .item-content .line4 {
+            background-color: #007aff;
+            color: white;
+            width: 128px;
+            border-radius: 4px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="first-header">
+            <div class="logo">
+                <a href="index.html"> <img class="mw-100" src="https://dev.mazadat.ly/uploads/all/gwNBDtLJZyQYcBbs0T63gQQRqqvKechzEZuS7Yxr.svg" alt="Mazadat" width="100" height="45"> </a>
+            </div>
+
+                <div class="lang-menu">
+                    <div class="selected">
+                        <div class="country-flag">
+                            <img
+                                src="flags/united-states-of-america-flag-small.png"
+                                width="25"
+                                height="20"
+                                alt="united states">
+                        </div>
+                        <div class="selected-language">
+                            English
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/egypt-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        Arabic
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/germany-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        German
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/france-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        France
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/turkey-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        Turkish
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="i am shopping for">
+                    <button class="icon-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="icons-header">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook face"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter tweet"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram-square insta"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>   
+        <div class="second-header">
+            <div class="modes">
+                <a href="#">
+                    <img class="sun" src="sun.png" alt="">
+                </a>
+                
+                <a href="#">
+                    <img class="moon" src="moon.png" alt="">
+                </a>
+            </div>
+    
+            <div class="item-list">
+                <div class="container">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Flash Sale</a></li>
+                        <li><a href="categories.html">All categories</a></li>
+                        <li><a href="#">All Sellers</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="reg-button">
+                <button>
+                        <a href="login.html" target="_self">login</a> | <a href="Reg.html">Register</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="layOut">
+                <div class="left-layOut">
+                    <div class="section1">
+                        <div class="section-title">
+                            <h6>categories</h6>
+                            <hr>
+                        </div>
+                        <div class="section-content">
+                            <ul>
+                                <li>
+                                    <a href="#">Women Clothing & Fashion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Men Clothing & Fashion</a>
+                                </li>
+                                <li>
+                                    <a href="#">Computer & Accessories</a>
+                                </li>
+                                <li>
+                                    <a href="#">Automobile & Motorcycle</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kids & toy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sports & outdoor</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jewelry & Watches</a>
+                                </li>
+                                <li>
+                                    <a href="#">Cellphones & Tabs</a>
+                                </li>
+                                <li>
+                                    <a href="#">Beauty, Health & Hair</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home Improvement & Tools</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home decoration & Appliance</a>
+                                </li>
+                                <li>
+                                    <a href="#">Toy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Software</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section2">
+                        <h6>Price Range</h6>
+                        <hr>
+                        <div class="Ranger">
+                            <input type="range" min="100" max="10000" value="50">
+                        </div>
+                    </div>
+
+                    <div class="section3">
+                        <h6>Filter By Size</h6>
+                        <hr>
+                        <form>
+
+                            <input type="checkbox" id="check1" checked>
+                            <label for="check1">S</label><br>
+
+                            <input type="checkbox" id="check2">
+                            <label for="check2">M</label><br>
+
+                            <input type="checkbox" id="check3">
+                            <label for="check3">L</label><br>
+
+                            <input type="checkbox" id="check4">
+                            <label for="check4">XL</label><br>
+
+                            <input type="checkbox" id="check5">
+                            <label for="check5">XXL</label><br>
+                        </form>
+                    </div>
+
+
+                    <div class="section4">
+                        <h6>Filter By color</h6>
+                        <hr>
+                        <div class="main-box">
+                            <div class="box" style="background-color: rgb(190, 171, 146);"></div>
+                            <div class="box" style="background-color: rgb(216, 153, 70);"></div>
+                            <div class="box" style="background-color: rgb(84, 55, 19);"></div>
+                            <div class="box" style="background-color: rgb(194, 114, 9);"></div>
+                            <div class="box" style="background-color: rgb(238, 137, 5);"></div>
+                            <div class="box" style="background-color: rgb(220, 250, 215);"></div>
+                            <div class="box" style="background-color: rgb(197, 112, 112);"></div>
+                            <div class="box" style="background-color: rgb(194, 39, 28);"></div>
+                            <div class="box" style="background-color: rgb(106, 4, 4);"></div>
+                            <div class="box" style="background-color: rgb(174, 16, 95);"></div>
+                            <div class="box" style="background-color: rgb(99, 9, 115);"></div>
+                            <div class="box" style="background-color: rgb(204, 11, 146);"></div>
+                            <div class="box" style="background-color: rgb(164, 218, 141);"></div>
+                            <div class="box" style="background-color: rgb(112, 177, 59);"></div>
+                            <div class="box" style="background-color: rgb(59, 122, 177);"></div>
+                            <div class="box" style="background-color: rgb(1, 38, 62);"></div>
+                            <div class="box" style="background-color: rgb(120, 116, 235);"></div>
+                            <div class="box" style="background-color: rgb(204, 11, 146);"></div>
+                            <div class="box" style="background-color: rgb(164, 218, 141);"></div>
+                            <div class="box" style="background-color: rgb(112, 177, 59);"></div>
+                            <div class="box" style="background-color: rgb(59, 122, 177);"></div>
+                            <div class="box" style="background-color: rgb(1, 38, 62);"></div>
+                            <div class="box" style="background-color: rgb(120, 116, 235);"></div>
+                            <div class="box" style="background-color: rgb(190, 171, 146);"></div>
+                            <div class="box" style="background-color: rgb(216, 153, 70);"></div>
+                            <div class="box" style="background-color: rgb(84, 55, 19);"></div>
+                            <div class="box" style="background-color: rgb(194, 114, 9);"></div>
+                            <div class="box" style="background-color: rgb(238, 137, 5);"></div>
+                            <div class="box" style="background-color: rgb(220, 250, 215);"></div>
+                            <div class="box" style="background-color: rgb(197, 112, 112);"></div>
+                            <div class="box" style="background-color: rgb(194, 39, 28);"></div>
+                            <div class="box" style="background-color: rgb(106, 4, 4);"></div>
+                            <div class="box" style="background-color: rgb(174, 16, 95);"></div>
+                            <div class="box" style="background-color: rgb(99, 9, 115);"></div>
+                            <div class="box" style="background-color: rgb(204, 11, 146);"></div>
+                            <div class="box" style="background-color: rgb(164, 218, 141);"></div>
+                            <div class="box" style="background-color: rgb(112, 177, 59);"></div>
+                            <div class="box" style="background-color: rgb(59, 122, 177);"></div>
+                            <div class="box" style="background-color: rgb(1, 38, 62);"></div>
+                            <div class="box" style="background-color: rgb(120, 116, 235);"></div>
+                            <div class="box" style="background-color: rgb(204, 11, 146);"></div>
+                            <div class="box" style="background-color: rgb(164, 218, 141);"></div>
+                            <div class="box" style="background-color: rgb(112, 177, 59);"></div>
+                            <div class="box" style="background-color: rgb(59, 122, 177);"></div>
+                            <div class="box" style="background-color: rgb(1, 38, 62);"></div>
+                            <div class="box" style="background-color: rgb(120, 116, 235);"></div>
+                            <div class="box" style="background-color: rgb(190, 171, 146);"></div>
+                            <div class="box" style="background-color: rgb(216, 153, 70);"></div>
+                            <div class="box" style="background-color: rgb(84, 55, 19);"></div>
+                            <div class="box" style="background-color: rgb(194, 114, 9);"></div>
+                            <div class="box" style="background-color: rgb(238, 137, 5);"></div>
+                            <div class="box" style="background-color: rgb(220, 250, 215);"></div>
+                            <div class="box" style="background-color: rgb(197, 112, 112);"></div>
+                            <div class="box" style="background-color: rgb(194, 39, 28);"></div>
+                            <div class="box" style="background-color: rgb(106, 4, 4);"></div>
+                            <div class="box" style="background-color: rgb(174, 16, 95);"></div>
+                            <div class="box" style="background-color: rgb(99, 9, 115);"></div>
+                            <div class="box" style="background-color: rgb(204, 11, 146);"></div>
+                            <div class="box" style="background-color: rgb(164, 218, 141);"></div>
+                            <div class="box" style="background-color: rgb(112, 177, 59);"></div>
+                            <div class="box" style="background-color: rgb(59, 122, 177);"></div>
+                            <div class="box" style="background-color: rgb(1, 38, 62);"></div>
+                            <div class="box" style="background-color: rgb(120, 116, 235);"></div>
+                            <div class="box" style="background-color: rgb(204, 11, 146);"></div>
+                            <div class="box" style="background-color: rgb(164, 218, 141);"></div>
+                            <div class="box" style="background-color: rgb(112, 177, 59);"></div>
+                            <div class="box" style="background-color: rgb(59, 122, 177);"></div>
+                            <div class="box" style="background-color: rgb(1, 38, 62);"></div>
+                            <div class="box" style="background-color: rgb(120, 116, 235);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-layOut">
+                    <div class="navy1">
+                        <ul>
+                            <li> <a href="#">Home</a> </li>
+                            <li> <a href="#">/   'All categories' </a> </li>
+                        </ul>
+                    </div>
+                    <div class="navy2">
+                        <div class="navy2-left">
+                            <h1>Search result for"ss"</h1>
+                        </div>
+                        <div class="navy2-right">
+                            <div>
+                                <label>Brands: </label> <br>
+                                <select>
+                                    <option value="nenene">nenene</option>
+                                    <option value="nenene">nenene</option>
+                                    <option value="nenene">nenene</option> 
+                                    <option value="nenene">nenene</option>                           
+                                </select>
+                            </div>
+
+                            <div>
+                            <label>Sort By: </label> <br>
+                                <select>
+                                    <option value="hehehe">hehehe</option>
+                                    <option value="hehehe">hehehe</option>
+                                    <option value="hehehe">hehehe</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+                            <div class="item-content">
+                                <div class="line1">
+                                    <span>LYD140.000</span>
+                                </div>
+                                <div class="line2">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>
+                                    <a>Dress the Population Women's Catalina Solid Sleeveless Fit & Flare </a>
+                                    Midi Dress
+                                </h3>
+                                <div class="line4">
+                                    Club Points:
+                                    <span>700</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

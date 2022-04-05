@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazadat</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        section.items {
+            padding: 103px 0px;
+            grid-template-columns: repeat(6, 1fr);
+            overflow: scroll;
+        }
+
+        div.items .item {
+            width:270px;
+            height: 379.8px;
+            background-color: rgba(99, 69, 237, 0.07);;
+            padding: 49px 23px 37px;
+            border: 1px solid rgba(99, 69, 237, 0.12);;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        .item .item-content {
+            padding: 0px 0px 0px 11px;
+            width: 222px;
+            height: 64px;
+        }
+
+        div.line1 a,
+        div.lin2 span {
+            font-size: 15px;
+        }
+
+        .row h3 {
+            padding: 0px 0px 50px 0px;
+            font-size: 39px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="first-header">
+            <div class="logo">
+                <a href="#"> <img src="https://dev.mazadat.ly/uploads/all/gwNBDtLJZyQYcBbs0T63gQQRqqvKechzEZuS7Yxr.svg" alt="Mazadat" width="100" height="45"> </a>
+            </div>
+                <div class="lang-menu">
+                    <div class="selected">
+                        <div class="country-flag">
+                            <img
+                                src="flags/united-states-of-america-flag-small.png"
+                                width="25"
+                                height="20"
+                                alt="united states">
+                        </div>
+                        <div class="selected-language">
+                            English
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/egypt-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        Arabic
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/germany-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        German
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/france-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        France
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="country-flag">
+                                <a href="#">
+                                    <img
+                                    src="flags/turkey-flag-small.png"
+                                    width="25"
+                                    height="20"
+                                    alt="united states">
+
+                                    <div class="country-name">
+                                        Turkish
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+
+                
+                
+
+                <div class="search-bar">
+                    <input type="text" placeholder="i am shopping for">
+                    <button class="icon-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="icons-header">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook face"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter tweet"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram-square insta"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>   
+        <div class="second-header">
+            <div class="modes">
+                <a href="#">
+                    <img class="sun" src="sun.png" alt="">
+                </a>
+                
+                <a href="#">
+                    <img class="moon" src="moon.png" alt="">
+                </a>
+            </div>
+
+            <div class="item-list">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Flash Sale</a></li>
+                        <li><a href="categories.html">All categories</a></li>
+                        <li><a href="#">All Sellers</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="reg-button">
+                <button>
+                        <a href="login.html" target="_self">login</a> | <a href="Reg.html">Register</a>
+                </button>
+            </div>
+        </div>
+        <div class="third-header">
+            <div class="dropdown">
+                <button class="dropbtn">categories</button>
+                <div class="dropdown-content">
+                  <a href="#"> Women Clothing & Fashion</a>
+                  <a href="#">Men Clothing & Fashion</a>
+                  <a href="#">Computer & Accessories</a>
+                  <a href="#">Automobile & Motorcycle</a>
+                  <a href="#">Kids & toy</a>
+                  <a href="#">Sports & outdoor</a>
+                  <a href="#">Jewelry & Watches</a>
+                  <a href="#">Cellphones & Tabs</a>
+                  <a href="#">Beauty, Health & Hair</a>
+                  <a href="#">Home Improvement & Tools</a>
+                  <a href="#">Home decoration & Appliance</a>
+                  <a href="#">Toy</a>
+                  <a href="#">Software</a>
+                </div>
+        </div>
+    </nav>
+
+    <section class="itemss">
+        <div class="container">
+            <div class="row">
+                <div class="section1-title">
+                    <div class="icon">
+                        <i class="ripple"></i>
+                    </div>
+                    <h3>Auction Product</h3>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <div class="item-pic">
+                            <a href="#">
+                                <img src="https://dev.mazadat.ly/uploads/all/leodGeNC25XoUQUoZ1UFhvbnJAzsRK83rUC3cWAd.jpg" alt="nene">
+                            </a>
+                        </div>
+    
+                        <div class="item-content">
+    
+                            <div class="line1">
+                                <span><a>HeadSet</a>></span>
+                            </div>
+    
+                            <div class="line2">
+                                <span>LYD0.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-pic">
+                            <a href="#">
+                                <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                            </a>
+                        </div>
+    
+                        <div class="item-content">
+    
+                            <div class="line1">
+                                <span><a>HeadSet</a>></span>
+                            </div>
+    
+                            <div class="line2">
+                                <span>LYD0.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section class="items" style="background-color: rgba(99, 69, 237, 0.07);">
+        <div class="container">
+            <div class="row">
+                <div class="section1-title">
+                    <div class="icon">
+                        <i class="ripple"></i>
+                    </div>
+                    <h3>Flash Deals</h3>
+                </div>
+
+                <div class="items">
+                        <div class="item" style="background-color: #F9F9F9;">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+        
+                            <div class="item-content">
+        
+                                <div class="line1">
+                                    <span><a>HeadSet</a>></span>
+                                </div>
+        
+                                <div class="line2">
+                                    <span>LYD0.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-color: #F9F9F9;">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+        
+                            <div class="item-content">
+        
+                                <div class="line1">
+                                    <span><a>HeadSet</a>></span>
+                                </div>
+        
+                                <div class="line2">
+                                    <span>LYD0.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-color: #F9F9F9;">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+        
+                            <div class="item-content">
+        
+                                <div class="line1">
+                                    <span><a>HeadSet</a>></span>
+                                </div>
+        
+                                <div class="line2">
+                                    <span>LYD0.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-color: #F9F9F9;">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+        
+                            <div class="item-content">
+        
+                                <div class="line1">
+                                    <span><a>HeadSet</a>></span>
+                                </div>
+        
+                                <div class="line2">
+                                    <span>LYD0.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item" style="background-color: #F9F9F9;">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+        
+                            <div class="item-content">
+        
+                                <div class="line1">
+                                    <span><a>HeadSet</a>></span>
+                                </div>
+        
+                                <div class="line2">
+                                    <span>LYD0.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item" style="background-color: #F9F9F9;">
+                            <div class="item-pic">
+                                <a href="#">
+                                    <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                                </a>
+                            </div>
+        
+                            <div class="item-content">
+        
+                                <div class="line1">
+                                    <span><a>HeadSet</a>></span>
+                                </div>
+        
+                                <div class="line2">
+                                    <span>LYD0.000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>  
+        </div>
+    </section>
+
+    <section class="items">
+        <div class="container">
+            <div class="row">
+                <div class="section1-title">
+                    <div class="icon">
+                        <i class="ripple"></i>
+                    </div>
+                    <h3>Today's Deal</h3>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <div class="item-pic">
+                            <a href="#">
+                                <img src="https://dev.mazadat.ly/uploads/all/leodGeNC25XoUQUoZ1UFhvbnJAzsRK83rUC3cWAd.jpg" alt="nene">
+                            </a>
+                        </div>
+    
+                        <div class="item-content">
+    
+                            <div class="line1">
+                                <span><a>HeadSet</a>></span>
+                            </div>
+    
+                            <div class="line2">
+                                <span>LYD0.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-pic">
+                            <a href="#">
+                                <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                            </a>
+                        </div>
+    
+                        <div class="item-content">
+    
+                            <div class="line1">
+                                <span><a>HeadSet</a>></span>
+                            </div>
+    
+                            <div class="line2">
+                                <span>LYD0.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-pic">
+                            <a href="#">
+                                <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                            </a>
+                        </div>
+    
+                        <div class="item-content">
+    
+                            <div class="line1">
+                                <span><a>HeadSet</a>></span>
+                            </div>
+    
+                            <div class="line2">
+                                <span>LYD0.000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-pic">
+                            <a href="#">
+                                <img src="https://dev.mazadat.ly/uploads/all/xlTKoHdMRpv7IhXltpPix3WKIeMFVJp7LsV64C47.svg" alt="nene">
+                            </a>
+                        </div>
+    
+                        <div class="item-content">
+    
+                            <div class="line1">
+                                <span><a>HeadSet</a>></span>
+                            </div>
+    
+                            <div class="line2">
+                                <span>LYD0.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    box-sizing: border-box;
+    color: #333;
+    height: 900px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: #f8f0f0;
+}
+.first-header {
+    height: 51px;
+    padding: 6px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.logo {
+    height: 100px;
+    width: 40.5px;
+}
+
+.logo img {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.lang-menu {
+    position: relative;
+    height: 44px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-menu .selected {
+    display: flex;
+    position: absolute;
+    left: 46px;
+}
+
+.lang-menu .selected .selected-language {
+    font-weight: 600;
+}
+
+.country-flag img {
+    border-radius: 5px;
+}
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgb(213 57 251 / 27%);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 220px;
+}
+
+.lang-menu ul li {
+    list-style: none;
+    width: 220px;
+} 
+
+.lang-menu ul li a {
+    width: 125px;
+    display: flex;
+    padding: 5px 10px;
+}
+
+.lang-menu ul li a .country-name {
+    margin-left: 6px;
+    width: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+.selected-language {
+    cursor: pointer;
+    line-height: 1.25;
+    margin-left: 5px;
+}
+
+/* Style icons */
+.icons-header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 32px;
+    top: 10px;
+
+}
+.icons-header ul li {
+    list-style: none;
+}
+
+.icons-header ul li i {
+    font-size: 32px;
+    padding: 10px;
+    position: relative;
+    top: -14px;
+}
+
+.face {
+    color: #3b5998;
+}
+
+.tweet {
+    color: #1da1f2;
+}
+
+.insta {
+    color:  #bd32a2;
+}
+
+.search-bar {
+    display: flex;
+    position: relative;
+    top: -7px;
+    right: 104px;
+}
+
+.first-header .search-bar input {
+    border: 1.5px solid #e0dada;
+    border-right: none;
+    margin-left: 55px;
+    margin-top: 7px;
+    border-radius: 50px 0px 0px 50px;
+    width: 665px;
+    height: 30px;
+    padding: 8px 0px 8px 19px;
+    box-shadow: 0px 1px 10px rgb(213 57 251 / 27%);
+    outline: none;
+} 
+
+nav .search-bar .icon-btn {
+    background-color: #ededed;
+    display: inline-block;
+    height: 49px;
+    width: 44px;
+    margin-top: 7px;
+    border: 1.5px solid #e0dada;
+    border-left: none;
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: 0px 1px 10px rgb(213 57 251 / 27%);
+    cursor: pointer;
+}
+
+.second-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reg-button {
+    margin-top: 7px;
+}
+
+.reg-button button {
+    width: 200px;
+    height: 59px;
+    color:#ededed;
+    background-image: linear-gradient(to right,#DC39FC,#6345ED);
+    transition: 0.7s ease-out;
+    transform: scale(1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 19px;
+}
+
+.reg-button button:hover {
+    background-image: linear-gradient(to top, #6345ED, #6345ED);
+}
+
+.reg-button button a {
+    color:#e0dada
+}
+
+a:active {
+    color:rgb(206, 200, 200)
+}
+
+.modes {
+    border: none;
+    height: 59px;
+    position: relative;
+    left: 25px;
+}
+
+.modes img {
+    border-radius: 55px;
+    background-color: #333;
+    height: 30px;
+    width: 30px;
+}
+
+.modes img.sun{
+    padding: 6px;
+    position: relative;
+    right: 5px;
+
+}
+
+.modes img.moon {
+    padding: 7px;
+}
+
+.third-header {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown .dropbtn {
+    background-image: linear-gradient(to right, #DC39FC, #6345ED);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 240px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    left: 654px;
+    top: 48px;
+}
+
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    left: 621px;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 1px 10px rgb(213 57 251 / 27%);
+    z-index: 1;
+    background-image: linear-gradient(to top,#DC39FC,#6345ED);
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: white;
+      color: black
+    }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #DC39FC;
+  }
+
+.container {
+    margin: 0px 215px;
+}
+
+.item-list {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0px;
+}
+
+.item-list ul {
+    list-style: none;
+    display: flex;
+}
+
+.item-list a {
+    margin-right: 10px;
+    padding: 26px 10px;
+    color: #14161b;
+    transition-duration: 0.6s;
+    font-weight: 400px;
+    font-family: 'Urbanist', sans-serif;
+}
+.item-list a:hover {
+    color: #DC39FC;
+}
+
+.sec1 {
+    height: 762.8px;
+    width: 1519.2px;
+    padding: 103px 0px
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+
+}
+.items .item {
+    border: 1px solid #ebe7e7;
+    margin: 10px;
+    transition-duration: 0.6s;
+}
+
+.items .item:hover {
+    box-shadow: 0px 1px 10px rgba(212, 57, 251, 0.632);
+}
+
+.items .item .item-content {
+        padding: 10px;
+
+}
+
+.navy2-left select {
+    border: 1px solid #aaa2a2;
+}
+.item  .item-pic img {
+    width: 180px;
+   height: 169px;
+   margin-left: 12px;
+
+}
+
+.item .item-content .line1 span {
+    color: #0275d8;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item .item-content .line2 {
+    font-size: 10px;
+    margin: 5px 0px;
+}
+
+.item .item-content  h3 {
+    font-size: 12px;
+    font-weight: 100;
+    color: #928b8b;
+    width: 185px;
+}
+
+.item .item-content .line4 {
+    background-color: #007aff;
+    color: white;
+    width: 128px;
+    border-radius: 4px;
+    padding: 3px;
+}
